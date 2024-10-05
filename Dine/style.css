@@ -18,24 +18,71 @@ header{
     height: 80px;
     background-color: rgba(23, 23, 23, 0.838);
     color: rgb(220, 216, 216);
+    display: flex;
+   /* align-items: center;*/
 }
-  .logo{
-    width: 200px;
-    height: 75px;
-  }
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
 .logo1{
     height: 75px;
    margin-left: 20px;
     
 }
+.list-item{
+    display: none;
+}
 
-nav ul{
-    float: right;
-    margin-right: 20px;
+
+ ul li{
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+ ul  li a{
+    color: rgba(255, 255, 255, 0.751);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+a.active:hover{
+    background:  rgba(0, 0, 0, 0.114);
 
 }
-nav ul li{
-    display: inline-block;
-    line-height: 40px;
-    margin: 0 5px;
+.icon{
+    width: 35px;
+    height: 4px;
+    background-color: rgba(232, 222, 222, 0.936);
+    margin: 4px 0;
+}
+.menu-icon{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    display: flex;
+    
+    flex-direction: column;
+
+    align-items: end;
+    margin-top: 15px;
+    padding: 20px;
+   
+
+}
+@media only screen and (min-width: 748px) 
+{
+    .menu-icon{
+        display: none;
+    }
+    .list-item{
+        display: block;
+    }
+
 }
