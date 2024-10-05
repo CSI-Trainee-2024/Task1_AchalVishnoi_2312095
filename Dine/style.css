@@ -9,7 +9,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: #f8f8f8;
+    background: #dfb408;
     font-family: monospace;
     
 }
@@ -85,4 +85,8 @@ a.active:hover{
         display: block;
     }
 
+}
+.main{
+    width: 100%;
+    
 }
