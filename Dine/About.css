@@ -143,7 +143,7 @@ header ul li a{
 .sect1 .box1{
         width: 50vw;
         height: 90vh;
-        margin-top: 12%;
+        margin-top: 9%;
         padding: 70px;
         h1{
             font: bold;
@@ -156,3 +156,90 @@ header ul li a{
            line-height: 1.8;
         }
 }
+
+.sect1 .box2
+{
+    width: 50vw;
+    height: 90vh;
+    background-image: url(images/Quay-About-Carousel\ \(1\).jpg);
+    margin-top: 5%;
+    background-size: cover;
+
+ }
+ 
+ 
+    .sect1 .box1{
+
+        padding-top: 5%;
+        animation: appear  linear;
+        animation-timeline: view();
+        animation-range: entry 0;
+      }
+      @keyframes appear {
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+        
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .sect2{
+        width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    
+      }
+    .sect2 .box1{
+        width: 50vw;
+    height: 90vh;
+    background-image: url(images/Quay-About-Carousel\ \(1\).jpg);
+    margin-top: 5%;
+    background-size: cover;
+
+        
+    }
+    .sect2 .box2{
+        width: 50vw;
+        height: 90vh;
+        margin-top: 9%;
+        padding: 70px;
+        h1{
+            font: bold;
+          font-size: 40px;
+          text-align: center;
+        }
+        p{
+            margin-top: 5%;
+            font-size: large;
+           line-height: 1.8;
+        }
+
+    
+        padding-top: 5%;
+        animation: appear  linear;
+        animation-timeline: view();
+        animation-range: entry 0;
+      }
+      @keyframes appear {
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+        
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+    
