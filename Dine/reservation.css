@@ -290,7 +290,7 @@ header ul li a{
         margin: 15px;
       }
       
-      div.scrollmenu a:hover {
+      .scrollmenu a:hover {
         background-color: #777;
         color: aliceblue;
 
@@ -304,10 +304,111 @@ header ul li a{
       .avail{
        margin-left: 14%;
       }
-      
-      
+     @media only screen and ( max-width: 480px){
+
+        .parant{
+            width: 100vw;
+
+        }
+        .input{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(245, 238, 238);
+            padding: 15px;
+            border: black solid 2px;
+            border-radius: 10px;
+            font-size: larger;
+            
+        }
+        .avail{
+            margin-left: 2px;
+        }
+        .scrollmenu {
+        
+            width: vw;
+            overflow: auto;
+            white-space: nowrap;
+            
+          }
+          .scrollmenu a {
+            display: inline-block;
+            color: rgb(20, 17, 17);
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            border: black 2px solid;
+            border-radius: 15px;
+            margin: 5px;
+          }
+          .con{ h1{
+                font-size: large;
+          }
+          h2{
+            font-size: medium;
+          }
+          h3{
+            font-size: medium;
+          }
+        }
 
 
+        
+      }
+  /*------------to make responsive upper part------------*/
+      @media only screen and ( max-width: 624px){
+        .parant{
+             width: 100vw;
+
+        }
+         .con{
+            flex-direction: column-reverse;
+            .box1{
+                width: 100vw;
+                height: 50vh;
+                button{
+                    height: 40px;
+                }
+                h1{
+                    font: bold;
+                    font-size: 5;
+                   }
+            }
+            .box2{
+                width: 100vw;
+                height: 50vh;
+
+            }
+           
+         }
+
+
+
+      }
+
+      @media only screen and ( max-width: 304px){
+         
+        .scrollmenu {
+             height: 50px;
+        
+            overflow: auto;
+            white-space: nowrap;
+            
+          }
+          
+          .scrollmenu a {
+            display: block;
+            color: rgb(20, 17, 17);
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            border: black 2px solid;
+            border-radius: 15px;
+            margin: 15px;
+            width: 80px;
+          }
+
+
+      }
     
     
     
