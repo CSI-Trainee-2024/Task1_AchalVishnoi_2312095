@@ -7,17 +7,19 @@
     text-decoration: none;                 /* remove nderline from ancher tag*/
 }
 body{
-    width: 100%;
-    min-height: 200vh;
+   
     background: #dfb408;
     font-family: monospace;
+    place-items: center;                    
     
-}
+}  
+/*------------------nav bar----------------*/
 header{
         
     width: 100%;
     height: 80px;
-     background-color: rgba(0, 0, 0, 0.938);
+
+    background-color: rgba(17, 16, 16, 0.868);
     color: rgba(36, 31, 31, 0.95);
     display: flex;
     align-items: center;
@@ -73,8 +75,14 @@ header .logo1{
     padding: 5px 5px;
     border-radius: 4px;
 }
+
 a.active:hover{
     background:  rgba(0, 0, 0, 0.114);
+
+}
+a#menu{
+    background: rgba(0, 0, 0, 0.543);
+
 
 }
 .icon{
@@ -117,27 +125,199 @@ a.active:hover{
    
 
 }
-.main{
-    width: 100%;
-     height: 100%;
-     overflow: hidden;
-     position: absolute;
-     display: flex;
-     flex-direction: column;
-     
-}
- .box1{
-    position: absolute;
-   height: 650px;
-   width: 350px;
-   top: 12%;
-   background: url(images/Waiter_stock_vector__Illustration_of_gloves__serve__fashionable_-_6521444-removebg-preview.png);
- }
-  
-
-
-
 
 header ul li a{
     color: rgba(255, 255, 255, 0.751);
 }
+   
+section{
+    
+    height: 100vh;
+    width: 100vw;
+    
+  }
+
+
+.upper-content{
+   
+    display: flex;
+    margin-top: 5%;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+   
+
+    
+}
+.text-content{
+  
+    
+    width: 50%;
+    height: 100vh;
+    
+    padding: 70px;
+}
+
+
+
+
+.head{
+    font: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.para{
+    margin-top: 5%;
+    
+    
+    
+    }
+    p{
+   font-size: large;
+   line-height: 1.8;
+      }
+  .img-content{
+    
+    
+    background-image:url(images/Cucumber-crackling-Menupage-1200x1228.jpg); 
+    height: 100vh;
+    width: 50%;
+    background-position: center;
+    overflow: hidden;
+}
+@media only screen and (max-width: 1168px){
+      .upper-content{
+
+   
+        display: flex;
+        margin-top: 5em;
+        height: 100vh;
+        width: 100vw;
+
+       
+       }
+
+     .img-content{
+       
+      display: none;
+      }
+     .text-content{
+        background: url(images/Cucumber-crackling-Menupage-1200x1228.jpg);
+        width: 100vw;
+        height: 100%;
+        
+    }
+    }
+    @media only screen and (max-width: 660px){
+        .upper-content{
+            display: flex;
+            height: 700px;
+        }
+        .text-content{
+            width: 100vw;
+            height: auto;
+            padding: 30px;
+        }
+        p{
+          font-size: medium;
+          line-height: 1.5;
+        }
+        .para{
+            margin-bottom: 30px;
+        }
+
+    }
+    @media only screen and (max-width: 350px){
+        .text-content{
+            padding: 10px;
+
+        }
+        .para{
+            margin-bottom: 0;
+            margin-top: 4px;
+
+        }
+        p{
+            line-height: 1.3;
+        }
+    }
+    @media only screen and (max-width: 281px){
+      
+
+    }
+    .view-menu{
+        position: absolute;
+        
+        display: block;
+      width: 150px;
+      height: 40px;
+      border: solid black 2px;
+       background-color: transparent ;
+       
+      padding: 5px;
+  
+  cursor: pointer;
+  
+  border-radius: 5px;
+    }
+    .view-menu a{
+        font-size: 16px;
+        color: rgb(3, 3, 3);
+    }
+    .view-menu:hover {
+        background-color: black;
+        a{
+            color: wheat;
+        }
+        
+      }
+
+     #sect1{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-image: url(images/018a1558-c7f8-4ff1-94df-1d81aa232aa8-removebg-preview.png);
+     }
+      
+      #sect1 {
+           h1{
+            font-size: larger;
+            font: bold;
+            }
+           ul{
+            display: flex;
+            flex-direction: column;
+           }
+           div{
+            
+           
+             display: flex;
+             flex-direction: column;
+              align-items: center;
+
+             
+            margin-top: 10px;
+           }
+           .box1{
+            margin-top: 20px;
+           }
+      }
+      
+     
+     
+     
+  
+    
+    
+   
+
+     
+      
+
+
+
+
