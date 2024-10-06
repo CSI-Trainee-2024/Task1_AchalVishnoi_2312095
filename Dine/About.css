@@ -373,7 +373,9 @@ header ul li a{
                 display: inline-block;
                 height: 40px;
                 width: 40px;
-                background-color: gray;
+                background-color: #76212177;;
+                
+                
                 margin:0 10px 10px 0;
                 text-align: center;
                 line-height: 40px;
@@ -382,8 +384,8 @@ header ul li a{
                 transition: all 0.5s ease;
             }
             .footer-col .social-links a:hover{
-                color: #24262b;
-                background-color: #ffffff;
+                color:  #7621219c;
+                background-color: #ab4f4f34;
             }
             #f1{
                 h1{
