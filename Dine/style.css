@@ -56,18 +56,16 @@ header .logo1{
  
 
 
-.list-item{
-    display: none;
-}
+
 
  
- ul li{
+ .list-item li{
     position: relative;
   list-style: none;
   display: inline;
   margin-right: 20px;
 }
- ul  li a{
+ ul li a{
    
     color: rgba(249, 247, 247, 0.925);
     font-size: 15px;
@@ -91,42 +89,26 @@ a.active:hover{
     background-color: rgba(232, 222, 222, 0.936);
     margin: 4px 0;
 }
-.menu-icon{
-    cursor: pointer;
-    display: block;
-    position: relative;
-    display: flex;
-    
-    flex-direction: column;
 
-    align-items: end;
-    margin-top: 15px;
-    padding: 20px;
-   
 
+.slide{
+    display: none;
 }
 
 /*---------------responsive nav bar------------*/
-@media only screen and (min-width: 748px) 
-{   
-    
-  
-    
-    .menu-icon{
-        display: none;
-    }
-    .list-item{
-        display: block;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-   
-
+.menu-icon{
+    display: none;
 }
+
+.list-item{
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* --------------------main-------------*/
 .main{
@@ -195,9 +177,36 @@ header.sticky{
         flex-direction: column;
     
         align-items: end;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 20px;
     }
+
+    .menu-icon:hover{
+        .menu-icon{
+            display: none;
+        }
+        .slide{
+             display: block;
+            background-color: rgba(237, 222, 222, 0.516) ;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height:300px;
+            width:150px;
+            padding: 5px;
+            padding-top: 10px;
+            li a{
+                color: black;
+            }
+            
+            
+          }
+        }
        
+    .list-item{
+        display: none;
+    }
 }
+/*----------menu-icon--------------*/
+ 

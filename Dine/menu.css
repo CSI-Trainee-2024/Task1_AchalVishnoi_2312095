@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -55,29 +56,34 @@ header .logo1{
 }*/
  
 
-
-.list-item{
-    display: none;
-}
-
- 
- ul li{
+.list-item li{
     position: relative;
   list-style: none;
   display: inline;
   margin-right: 20px;
 }
- ul  li a{
+
+.list-item{
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+ul li a{
    
-    color: rgba(0, 0, 0, 0.863);
-    font-size: 15px;
+    color: rgba(249, 247, 247, 0.925);
+    font-size: 17px;
     text-transform: uppercase;
     padding: 5px 5px;
     border-radius: 4px;
-}
+    font: 100;
+} 
 
 a.active:hover{
-    background:  rgba(0, 0, 0, 0.114);
+    background:  rgba(0, 0, 0, 0.432);
 
 }
 a#menu{
@@ -91,45 +97,65 @@ a#menu{
     background-color: rgba(232, 222, 222, 0.936);
     margin: 4px 0;
 }
-.menu-icon{
-    cursor: pointer;
-    display: block;
-    position: relative;
-    display: flex;
-    
-    flex-direction: column;
 
-    align-items: end;
-    margin-top: 15px;
-    padding: 20px;
-   
-
+.slide{
+    display: none;
 }
-@media only screen and (min-width: 748px) 
-{   
-    
-  
-    
+.menu-icon{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 700px){
+
     .menu-icon{
-        display: none;
-    }
-    .list-item{
+        cursor: pointer;
         display: block;
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        
+        flex-direction: column;
+    
+        align-items: end;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 20px;
     }
-    
-    
-   
 
+    .menu-icon:hover{
+        
+        .slide{
+             display: block;
+            background-color: rgba(237, 222, 222, 0.516) ;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height:300px;
+            width:150px;
+            padding: 5px;
+            padding-top: 10px;
+            li a{
+                color: black;
+            }
+            
+            
+          }
+        }
+       
+    .list-item{
+        display: none;
+    }
 }
 
-header ul li a{
-    color: rgba(255, 255, 255, 0.751);
-}
-   
+ 
+
+
+
+
+
+
+/*-------------main--------------*/
 section{
     
     height: 100vh;
