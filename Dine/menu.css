@@ -382,7 +382,7 @@ section{
         transition: all 0.3s ease;
     }
     .footer-col ul li a:hover{
-        color: #ffffff;
+        color: #ca5050ab;
         padding-left: 8px;
     }
     .footer-col .social-links a{
