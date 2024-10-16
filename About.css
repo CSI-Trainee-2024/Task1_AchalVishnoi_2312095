@@ -10,7 +10,8 @@ body{
    
     background: #dfb408;
     font-family: monospace;
-    place-items: center;                    
+    place-items: center;  
+    width: 100vw;                  
     
 }  
 /*------------------nav bar----------------*/
@@ -41,6 +42,45 @@ header .logo1{
               height: 75px;
          margin-left: 20px;
           transition: 0.6s;
+
+}
+
+header ul li a.active:hover{
+    background: rgba(0, 0, 0, 0.295);
+
+}
+header ul li a{
+    color: rgba(245, 222, 179, 0.902);
+}
+header {
+    padding: 5px 20px;
+    background-color: rgba(17, 16, 16, 0.868);
+}
+@media only screen and (max-width: 759px){
+        
+    header{
+        padding: 10px 6px;
+       
+    }
+   
+   header .logo1{
+       height: 55px;
+   }
+   .menu-icon{
+    margin-top: 10%;
+    margin-bottom: 10%;
+   }
+   .sect1 .box2
+{
+    width: 50vw;
+    height: 90vh;
+    background-image: url(images/Quay-About-Carousel\ \(1\).jpg);
+    margin-bottom: 5%;
+    background-size: cover;
+
+ }
+
+
 
 }
 
@@ -217,9 +257,9 @@ a#About{
 .sect1 .box2
 {
     width: 50vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url(images/Quay-About-Carousel\ \(1\).jpg);
-    margin-top: 5%;
+    margin-top: 0%;
     background-size: cover;
 
  }
@@ -258,14 +298,14 @@ a#About{
         width: 50vw;
     height: 90vh;
     background-image: url(images/Quay-Meet-The-Team-Nikki-To-1500x1000-1.jpg);
-    margin-top: 3%;
+    margin-top:00;
     background-size: cover;
 
         
     }
     .sect2 .box2{
         width: 50vw;
-        height: 90vh;
+        height: 100vh;
         margin-top: 9%;
         padding: 70px;
         h1{
@@ -304,7 +344,7 @@ a#About{
           
         .sect1{
             width: 100vw;
-            height: 1000px;
+            height: 950px;
             display: flex;
             flex-direction: column-reverse;
             .box1{
@@ -330,7 +370,7 @@ a#About{
             .box2{
                 width: 100vw;
                 height: 60vh;
-                margin-top: 5%;
+                margin-top: 0%;
                
             }
             }
@@ -339,12 +379,13 @@ a#About{
                 flex-direction: column;
                  background: no-repeat;
                  background-size: auto;
-                 height: auto;
+                 
                  .box2{
                     width: 100vw;
                     height: 50 vh;
                     margin-top: 0%;
-                    padding: 5px;
+                    padding: 90px 7px 7px 16px;
+                    
                     
                     h1{ 
                         margin-top: 0;

@@ -43,6 +43,44 @@ header .logo1{
           transition: 0.6s;
 
 }
+header .logo1{
+    position: relative;
+     height: 75px;
+margin-left: 20px;
+ transition: 0.6s;
+
+}
+
+header ul li a.active:hover{
+background: rgba(0, 0, 0, 0.295);
+
+}
+header ul li a{
+color: rgba(245, 222, 179, 0.902);
+}
+header {
+padding: 5px 20px;
+background-color: rgba(17, 16, 16, 0.868);
+}
+@media only screen and (max-width: 759px){
+
+header{
+padding: 10px 6px;
+
+}
+
+header .logo1{
+height: 55px;
+}
+.menu-icon{
+margin-top: 10%;
+margin-bottom: 10%;
+}
+
+
+
+
+}
 
   /* .container{
     width: 95%;
