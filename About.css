@@ -409,9 +409,9 @@ a#About{
 
             /* ---------------footer--------------------*/
             .container{
-                max-width: 1170px;
-                margin:auto;
-            }
+               margin: auto;
+               
+     }
             .row{
                 display: flex;
                 flex-wrap: wrap;
@@ -459,7 +459,7 @@ a#About{
                 transition: all 0.3s ease;
             }
             .footer-col ul li a:hover{
-                color: #ffffff;
+                color: #ca5050ab;
                 padding-left: 8px;
             }
             .footer-col .social-links a{
@@ -483,9 +483,11 @@ a#About{
             #f1{
                 h1{
                     color: #2d0202;
+                    font-size: medium;
                 }
                 p{
-                    color:  #762121;;
+                    color:  #762121;
+                    font-size: medium;
                 }
             }
             
@@ -502,10 +504,4 @@ a#About{
             }
             }
             
-            
-            
-            
-            
-
-      
-    
+             
